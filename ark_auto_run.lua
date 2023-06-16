@@ -2,7 +2,7 @@ autorunGKey = 1
 toggleRun = true
 
 function OnEvent(event,arg,family)
-OutputLogMessage("Event: "..event.." Arg: "..arg.."\n")
+OutputLogMessage("Event: "..event.." Arg: "..arg.."\n") --output for pressed key
 if event == "G_PRESSED" and arg == autorunGKey then
 toggleRun = not toggleRun
 if toggleRun then
